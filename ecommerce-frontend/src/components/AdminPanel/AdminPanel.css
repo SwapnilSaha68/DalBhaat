@@ -1,0 +1,138 @@
+.admin-panel {
+  max-width: 1000px; /* Adjusted for better fit */
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+.admin-panel-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-panel-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-tab-btn {
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-tab-btn:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.admin-tab-btn.active {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+.product-form-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-tab-btn {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #007bff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-tab-btn:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.product-tab-btn.active {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+.admin-panel-content,
+.product-form-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-management {
+  margin-top: 20px;
+}
+
+.order-table-container {
+  max-height: 400px; /* Limit height for vertical scrolling */
+  overflow-x: auto;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.order-table th,
+.order-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.order-table th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  position: sticky;
+  top: 0; /* Sticky header for better usability */
+  z-index: 1;
+}
+
+.order-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.order-table tr:hover {
+  background-color: #ddd;
+}
+
+.order-item-summary {
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+}
+
+.no-orders-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  padding: 20px;
+}
