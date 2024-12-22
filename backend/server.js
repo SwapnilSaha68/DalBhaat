@@ -11,6 +11,7 @@ const Product = require('./models/Product');
 const orderRoutes = require('./routes/orderRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const wishlistRoutes = require('./routes/wishlistRoutes');
+const couponRoutes = require('./routes/couponRoutes');
 
 
 dotenv.config();
@@ -74,6 +75,7 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api', cartRoutes);
 app.use('/api/wishlist', wishlistRoutes);
+app.use('/api/coupons', couponRoutes);
 
 
 // Root API route
@@ -90,7 +92,7 @@ async function createDefaultAdmin() {
   try {
     const existingAdmin = await User.findOne({ email: 'admin@example.com' });
     if (!existingAdmin) {
-      const hashedPassword = await bcrypt.hash('admin123', 10);
+      const hashedPassword = await bcrypt.hash('1', 10);
       const adminUser = new User({
         name: 'Admin',
         email: 'admin@example.com',
